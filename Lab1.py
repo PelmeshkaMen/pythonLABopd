@@ -4,7 +4,6 @@ import requests
 
 def parse():
     url = 'https://omgtu.ru/general_information/faculties/'
-
     page = requests.get(url,verify=False)
     print(page.status_code)
     soup = BeautifulSoup(page.text, "html.parser")
